@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Jenita Berliana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="home">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #840cd4"
+    >
+      <!-- fixed top utk supaya navbarnya tetap di atas ketika di scroll-->
+      <div class="container">
+        <!-- awalnya class container-fluid. ganti container aja supaya ke tengah-->
+        <a class="navbar-brand" href="#">Profile.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <!-- class ms-auto: margin left/start mepet ke kanan -->
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron di ambil dari bootstrap 4 -->
+    <section class="jumbotron text-center">
+      <!-- class text-center utk bikin semua content di tengah -->
+      <img
+        src="img/profile.jpg"
+        width="200"
+        class="rounded-circle img-thumbnail"
+      />
+      <!-- class rounded-circle : utk fotonya bulat. img thumbnail utk ada garis tepi di gambarnya -->
+      <h1 class="h1 text-light">Jenita <span>Berliana</span></h1>
+      <p class="lead">Studi Independen <span>|</span> Web Developer Program</p>
+      <!-- tag svg utk buat gelombangnya. source : get waves -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L21.8,133.3C43.6,107,87,53,131,69.3C174.5,85,218,171,262,181.3C305.5,192,349,128,393,122.7C436.4,117,480,171,524,208C567.3,245,611,267,655,240C698.2,213,742,139,785,128C829.1,117,873,171,916,202.7C960,235,1004,245,1047,218.7C1090.9,192,1135,128,1178,133.3C1221.8,139,1265,213,1309,218.7C1352.7,224,1396,160,1418,128L1440,96L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-4 col-underline">
+            <h2><span>About </span>Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <!-- fs: class font-size -->
+          <div class="col-md-5">
+            <!-- col-md-5 : column medium dengan ukuran 5. ukuran maks=12-->
+            <p>
+              Saya Jenita Berliana. Mahasiswa Politeknik Negeri Sriwijaya
+              jurusan Manajemen Informatika. Saya Berusia 20 tahun dan memiliki
+              minat untuk meningkatkan skill di bidang web development.
+            </p>
+          </div>
+          <div
+            class="col-md-1 d-flex align-items-center justify-content-center"
+          >
+            <i class="bi bi-heart-fill text-danger"></i>
+            <!-- penggunakan icon heart pd bootstrap -->
+          </div>
+          <div class="col-md-5">
+            <p>
+              Ini adalah website pertama saya sekaligus website profile saya.
+              Saya mengharapkan banyak saran dan masukan mengenai website ini.
+              Untuk itu silakan hubungi saya lewat tombol di bawah.
+            </p>
+          </div>
+        </div>
+        <div class="col text-center mt-3">
+          <a
+            class="btn text-light"
+            href="#contact"
+            style="background-color: #840cd4"
+            >Contact Me</a
+          >
+          <!--background nya tidak ada di bootstrap jadi bikin style css sendiri-->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a39cff"
+          fill-opacity="1"
+          d="M0,96L21.8,128C43.6,160,87,224,131,213.3C174.5,203,218,117,262,106.7C305.5,96,349,160,393,192C436.4,224,480,224,524,229.3C567.3,235,611,245,655,213.3C698.2,181,742,107,785,90.7C829.1,75,873,117,916,144C960,171,1004,181,1047,160C1090.9,139,1135,85,1178,96C1221.8,107,1265,181,1309,208C1352.7,235,1396,213,1418,202.7L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col text-light text-center mb-3">
+            <h2>My <span>Skills</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <!-- md: medium. infix pada layout breakpoints supaya cards responsive. penulisannya harus diantara/ditengah2 -->
+            <div class="card">
+              <div class="card">
+                <img src="img/skill1.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Computer Skills</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <!-- col-md-4 mb-3 : buat column dgn uk medium 4 dgn margin bottom 3 -->
+            <div class="card">
+              <div class="card">
+                <img src="img/skill2.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Communication</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card">
+                <img src="img/skill3.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Teamwork</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,192C373.3,181,427,139,480,144C533.3,149,587,203,640,240C693.3,277,747,299,800,272C853.3,245,907,171,960,144C1013.3,117,1067,139,1120,128C1173.3,117,1227,75,1280,74.7C1333.3,75,1387,117,1413,138.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2><span>Contact</span> Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  aria-describedby="nama"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn button-start text-light"
+                style="background-color: #840cd4"
+              >
+                Kirim
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#840cd4"
+          fill-opacity="1"
+          d="M0,320L21.8,272C43.6,224,87,128,131,112C174.5,96,218,160,262,202.7C305.5,245,349,267,393,266.7C436.4,267,480,245,524,218.7C567.3,192,611,160,655,170.7C698.2,181,742,235,785,224C829.1,213,873,139,916,133.3C960,128,1004,192,1047,224C1090.9,256,1135,256,1178,229.3C1221.8,203,1265,149,1309,144C1352.7,139,1396,181,1418,202.7L1440,224L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="text-light text-center pb-5"
+      style="background-color: #840cd4"
+    >
+      <p>Created by @Jenita Berliana</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
